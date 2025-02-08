@@ -45,6 +45,7 @@ li{
     display: flex;
     flex-direction: column;
     background-size: auto;
+    background-color: bisque;
 }
 [class*='__conteiner'] {
     max-width: 1250px;
