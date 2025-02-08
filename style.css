@@ -53,10 +53,6 @@ li{
     padding: 0px 10px;
 }
 
-/* body{
-    background-color: #ff9100;
-    #ff0a17
-} */
 
 /* ============================= */
 
@@ -218,9 +214,7 @@ li{
         align-items: center;
         padding-top: 25vh;
         gap: 40px;
-
     }
-
     .header__link a{
         color: #fff;
     }
