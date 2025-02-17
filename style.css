@@ -352,7 +352,7 @@ li{
     }
 }
 
-@media (max-height: 360px){
+@media (max-height: 321px){
     .hello__body {
         flex-wrap: nowrap;
     }
