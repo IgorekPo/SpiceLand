@@ -351,4 +351,10 @@ li{
 
     }
 }
+
+@media (max-height: 735px){
+    .hello__body {
+        flex-wrap: nowrap;
+    }
+}
 /* ================================== */
