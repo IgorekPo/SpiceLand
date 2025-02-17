@@ -235,7 +235,6 @@ li{
     height:100vh;
     display: flex;
     align-items: center;
-
 }
 .hello__body {
     display: flex;
@@ -251,7 +250,6 @@ li{
 }
 .hello__title-title {
     font-size: clamp(30px, 1.5vw, 70px);
-    /* margin-bottom: 40px; */
     margin-bottom: clamp(10px, 1.5vw, 45px);
     line-height: 68px;
     letter-spacing: 0.1em;
@@ -269,6 +267,12 @@ li{
     padding: 12px 40px;
     background-color: #f76100;
     color: #fff;
+    transition: all 0.5s ease;
+}
+.hello__title-button:hover{
+    box-shadow: 0 0 20px #f76100;
+    color: #403536;
+    scale: 1.15;
 }
 
 .hello__parralax {
@@ -324,5 +328,27 @@ li{
     height: 100%;
     z-index: -1;
 
+}
+
+@media (max-width: 767px){
+    .hello__body {
+        flex-wrap: wrap;
+    }
+    .hello__titles {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .hello__parralax {
+        position: relative;
+        margin: 0 auto;
+    }
+    .parralax__leaf3-img{
+        height: clamp(24px, 10vw, 60px);
+    }
+    .parralax__leaf1-img{
+        height: clamp(12px, 3vw, 22px);
+
+    }
 }
 /* ================================== */
