@@ -90,12 +90,16 @@ li{
 }
 .header__logo img{
     max-width: 100%;
-}
+    transition: all .5s ease;
 
+}
+.header__logo:hover img{
+    filter: drop-shadow(0 0 5px black);
+}
 .header__links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
     font-weight: 400;
     font-size: clamp(14px, 1.5vw, 20px);
     flex-wrap: wrap;
@@ -228,6 +232,7 @@ li{
 /* ============================= */
 
 /* =====1t BLOCK=============== */
+
 .hello {
 
 }
@@ -263,7 +268,7 @@ li{
 .hello__title-button {
     font-weight: 500;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 12px 40px;
     background-color: #f76100;
     color: #fff;
@@ -304,6 +309,13 @@ li{
     top: 12%;
     transform: translate(-22%, -21%);
 }
+.parralax__pepper-img{
+    max-height: 70px;
+    position: absolute;
+    left: 0%;
+    top: 42%;
+    transform: translate(-18%, -32%);
+}
 .hello__parralax-img::before {
     content: '';
     position: absolute;
@@ -341,6 +353,7 @@ li{
     }
     .hello__parralax {
         position: relative;
+        width: 80%;
         margin: 0 auto;
     }
     .parralax__leaf3-img{
@@ -348,13 +361,164 @@ li{
     }
     .parralax__leaf1-img{
         height: clamp(12px, 3vw, 22px);
+    }
+    .parralax__pepper-img{
+        height: clamp(20px, 8vw, 70px);
 
     }
 }
-
+@media (max-width: 470px){
+    .hello__parralax {
+        width: 100%;
+    }
+}
 @media (max-height: 321px){
     .hello__body {
         flex-wrap: nowrap;
     }
 }
+
 /* ================================== */
+
+/* =========2d block================ */
+
+.spices {
+}
+.spices__conteiner {
+    margin-bottom: 120px;
+}
+.spices__body {
+    margin: 60px 0;
+}
+.spices__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.spices__information {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    flex: 1 1 50%;
+    height: clamp(351px, 36vw, 415px);
+
+}
+.spices__information-featured {
+    color: gold;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.spices__information-title {
+    color: #f76100;
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+
+}
+.spices__information-text {
+    flex: 1 1 auto;
+
+}
+@media (max-width: 767px){
+.spices__information-text {
+margin-bottom: 30px;
+}
+}
+.spices__information-list:last-child{
+    margin-bottom: 0px;
+}
+.spices__information-list li {
+    background: url('./img/img-move-spice/check.png') left no-repeat ;
+    padding-left: 36px;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 4px black);
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.spices__information-img {
+    flex: 1 1 50%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.spices__information-main-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 224px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+
+}
+.spices__information-main-img img{
+    position: relative;
+    height: 224px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all 0.5s ease 0s;
+
+}
+.spices__information-main-img:hover img{
+    scale: 1.2;
+    z-index: 10;
+}
+.spices__information-main-img:hover:before {
+    background: none;
+}
+
+.spices__information-seconds-img{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.spices__information-second-img1,
+.spices__information-second-img2{
+    position: relative;
+    max-height: 188px;
+    width: 49%;
+    transition: all 0.5s ease;
+}
+.spices__information-second-img1 img,
+.spices__information-second-img2 img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.spices__information-second-img1:hover,
+.spices__information-second-img2:hover {
+    scale: 1.2;
+    z-index: 10;
+}
+.spices__information-second-img1::before,
+.spices__information-second-img2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 2;
+}
+.spices__information-second-img1:hover::before,
+.spices__information-second-img2:hover::before{
+    background: none;
+}
+@media (max-width:767px) {
+    .spices__block{
+        flex-direction: column;
+    }
+    
+}
+/* ===================== */
