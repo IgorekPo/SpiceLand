@@ -1,5 +1,5 @@
-@import '/blocks/reset.css';
-@import '/blocks/header.css';
-@import '/blocks/mixins.css';
-@import '/blocks/footer.css';
-@import '/blocks/main.css';
+@import './blocks/reset.css';
+@import './blocks/header.css';
+@import './blocks/mixins.css';
+@import './blocks/footer.css';
+@import './blocks/main.css';
