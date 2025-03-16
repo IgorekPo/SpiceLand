@@ -142,7 +142,7 @@ li {
    top: 0;
    left: 0;
    width: 100%;
-   z-index: 2;
+   z-index: 3;
 }
 
 .header__body {
@@ -494,8 +494,6 @@ li {
    border: 2px solid #177165;
 }
 
-.button {}
-
 @media(max-width: 1110px){
    .about__button {
          margin: 30px 0px 0px 0px;
@@ -515,6 +513,123 @@ li {
    }
       .about__button{
          margin-bottom: 60px;
+      }
+}
+/* ==================================== */
+
+
+/*  =========SPICES=====================*/
+
+.spices {
+   background: #E1F4F2;
+   padding: 50px 0px 0px 0px;
+}
+
+.spices__conteiner {}
+
+.spices__body {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.spices__tittle {}
+
+.spices__tittle-tex {
+   margin: 0px 0px 10px 0px;
+}
+
+.dash-grey {}
+
+.spices__tittle-tittle {
+   font-family: "Playfair Display", serif;
+   font-size: clamp(1.5rem, 1.071rem + 2.14vw, 3rem);
+   line-height: clamp(2.125rem, 1.714rem + 2.05vw, 3.563rem);
+   color: #177165;
+   margin: 0px 0px 50px 0px;
+}
+
+.spices__market {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   row-gap: 25px;
+   column-gap: 25px;
+   width: 100%
+}
+
+.spices__market-block {
+   position: relative;
+   width: 100%;
+   height: 248px;
+}
+
+.spices__market-image {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   border-radius: 25px;
+   margin: 0px 0px 30px 0px;
+}
+
+.spices__market-image::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+   z-index: 2;
+   transition: all 0.5s ease 0s;
+}
+.spices__market-dash{
+   margin: 0px 0px 10px 0px;
+}
+.spices__market-image img{
+   transition: all 0.5s ease 0s;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+.spices__market-image:hover img {
+   scale: 1.2;
+}
+.spices__market-image:hover::before {
+   transition: all 0.5s ease 0s;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.spices__market-tittle{
+   font-family: "Playfair Display", serif;
+   font-size: 22px;
+   line-height: 35.75px;
+   color: #177165;
+}
+.spices__button {
+   border: 2px solid #177165;
+   margin: 200px 0px 100px 0px;
+   align-self: center;
+
+}
+
+.button {}
+
+
+
+@media(max-width: 1023px){
+   .spices__market {
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 140px;
+   }
+}
+@media(max-width: 565px){
+   .spices__market {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 140px;
       }
 }
 /* ==================================== */
