@@ -143,6 +143,7 @@ li {
    left: 0;
    width: 100%;
    z-index: 3;
+   box-shadow: 0px 3px 20px black;
 }
 
 .header__body {
@@ -180,7 +181,7 @@ li {
    scale: 1.2;
 }
 
-.header__calls {
+.call {
    display: flex;
    align-items: center;
    gap: 20px;
@@ -631,5 +632,84 @@ li {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 140px;
       }
+}
+/* ==================================== */
+
+
+/* =====CAL============================ */
+.calling {
+   background: #177165;
+}
+
+.calling__conteiner {}
+
+.calling__body {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 0px 60px 0px;
+   gap: 40px;
+}
+
+.calling__text {
+   flex:1 1 40%;
+}
+
+.calling__dash {
+   margin: 0px 0px 10px 0px;
+}
+
+.dash-green {}
+
+.calling__tittle-tittle {
+   font-family: "Playfair Display", serif;
+   font-weight: 400;
+   font-size: clamp(1.5rem, 1.071rem + 2.14vw, 3rem);
+   line-height: clamp(2.125rem, 1.714rem + 2.05vw, 3.563rem);
+   color: #fff;
+}
+
+.calling__block {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+}
+
+.calling__calling {}
+
+.call {}
+
+.header__phone {}
+
+.calling__magazine {
+   display: flex;
+   gap: 25px;
+}
+
+.calling__magazine-spices {
+   background-color: #fff;
+}
+
+.button {}
+
+.calling__magazine-materials {
+   background-color: #fff;
+}
+@media(max-width: 1023px){
+   .calling__body{
+      flex-direction: column;
+   }
+   .calling__block{
+      margin: 0px 0px 60px 0px;
+   }
+}
+
+@media(max-width: 467px){
+   .calling__magazine-spices,
+   .calling__magazine-materials {
+      padding: 6px 10px;
+      gap: 6px;
+   }
 }
 /* ==================================== */
