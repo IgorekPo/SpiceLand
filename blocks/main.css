@@ -1,0 +1,70 @@
+/* ======HELO================ */
+
+
+.hello {
+   background: #177165;
+   min-height: 100vh;
+   padding-top: 120px;
+}
+
+.hello__conteiner {}
+
+.hello__body {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.hello__informations {
+   flex: 1 1;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+}
+
+.hello__dash-buttom{
+   flex: 1 1 auto;
+}
+
+.dash-green {}
+
+.hello__informations-tittle {
+   font-family: Playfair Display;
+   font-weight: 400;
+   font-size: clamp(1.5rem, -1.071rem + 5.36vw, 3.75rem);
+   line-height: clamp(2.5rem, 0.857rem + 4.46vw, 4.875rem);
+   color: #fff;
+}
+
+.hello__button {
+   background-color: #fff;
+   width: 220px;
+   text-align: center;
+   margin: 0px 0px 80px 0px;
+   transition: all 0.5s ease;
+   border-radius: 10px;
+}
+
+.hello__image {
+   width: clamp(300px, 30vw, 550px);
+   height: clamp(550px, 40vw, 760px);
+   margin: 0px 0px 80px 0px;
+}
+.hello__image img{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+@media(max-width: 689px){
+.hello__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+   }
+   .hello__button {
+      margin-bottom: -30px;
+   }
+}
+/* ============================== */
