@@ -395,7 +395,7 @@ li {
    }
 
    .hello__button {
-      margin-bottom: -30px;
+      margin: 20px auto;
    }
 }
 
