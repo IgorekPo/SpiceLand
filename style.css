@@ -37,7 +37,9 @@ main {
 }
 
 a {
-   text-decoration: none;
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
 }
 
 li {
@@ -115,6 +117,7 @@ li {
    align-items: center;
    justify-content: center;
    transition: all 0.5s ease;
+   border-radius: 5px;
 }
 
 .button a {
@@ -335,18 +338,16 @@ li {
 .hello {
    background: #177165;
    min-height: 100vh;
-   padding-top: 120px;
 }
 
 
 .hello__body {
    display: flex;
-   justify-content: space-between;
    gap: 20px;
+   padding: 140px 0 60px 0;
 }
 
 .hello__informations {
-   flex: 1 1;
    display: flex;
    gap: 20px;
    flex-direction: column;
@@ -369,19 +370,15 @@ li {
    background-color: #fff;
    width: 220px;
    text-align: center;
-   margin: 0px 0px 80px 0px;
    transition: all 0.5s ease;
-   border-radius: 10px;
+
 }
 
 .hello__image {
-   width: clamp(300px, 30vw, 550px);
-   height: clamp(550px, 40vw, 760px);
-   margin: 0 auto;
+   flex: 0 0 40%;
 }
 
 .hello__image img {
-   height: 100%;
    width: 100%;
    object-fit: contain;
    filter: drop-shadow(2px 4px 6px black);
@@ -415,6 +412,7 @@ li {
    align-items: start;
    gap: 52px;
    flex-direction: column;
+   padding: 100px 0;
 }
 
 .about__tittle-tex {
