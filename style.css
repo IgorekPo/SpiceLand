@@ -333,7 +333,17 @@ li {
 
 /* main */
 /* ======HELO================ */
-
+.coling-img{
+   animation: colingMove 8s infinite;
+}
+@keyframes colingMove{
+   from{
+      transform: rotateY(360deg);
+   }
+   to{
+      transform: rotateY(-360deg);
+   }
+}
 
 .hello {
    background: #177165;
@@ -690,14 +700,4 @@ li {
    }
 }
 /* ==================================== */
-.coling-img{
-   animation: colingMove 8s infinite;
-}
-@keyframes colingMove{
-   from{
-      transform: rotateY(360deg);
-   }
-   to{
-      transform: rotateY(-360deg);
-   }
-}
+
