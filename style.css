@@ -524,21 +524,16 @@ li {
    padding: 50px 0px 0px 0px;
 }
 
-.spices__conteiner {}
-
 .spices__body {
    display: flex;
    flex-direction: column;
    align-items: start;
 }
 
-.spices__tittle {}
-
 .spices__tittle-tex {
    margin: 0px 0px 10px 0px;
 }
 
-.dash-grey {}
 
 .spices__tittle-tittle {
    font-family: "Playfair Display", serif;
@@ -615,10 +610,6 @@ li {
 
 }
 
-.button {}
-
-
-
 @media(max-width: 1023px){
    .spices__market {
    grid-template-columns: repeat(2, 1fr);
@@ -639,8 +630,6 @@ li {
    background: #177165;
 }
 
-.calling__conteiner {}
-
 .calling__body {
    display: flex;
    align-items: center;
@@ -657,8 +646,6 @@ li {
    margin: 0px 0px 10px 0px;
 }
 
-.dash-green {}
-
 .calling__tittle-tittle {
    font-family: "Playfair Display", serif;
    font-weight: 400;
@@ -674,12 +661,6 @@ li {
    gap: 40px;
 }
 
-.calling__calling {}
-
-.call {}
-
-.header__phone {}
-
 .calling__magazine {
    display: flex;
    gap: 25px;
@@ -688,8 +669,6 @@ li {
 .calling__magazine-spices {
    background-color: #fff;
 }
-
-.button {}
 
 .calling__magazine-materials {
    background-color: #fff;
@@ -711,3 +690,8 @@ li {
    }
 }
 /* ==================================== */
+
+
+.materisl-main{
+
+}
