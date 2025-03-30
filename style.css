@@ -463,8 +463,6 @@ li {
 /* ubrat` ==========*/
 color: #fff;
 /* ============ */
-
-
 }
 
 .about__main {
@@ -566,12 +564,48 @@ color: #fff;
       }
 }
 @media(max-width: 768px){
-   .about{
+   /* .about{
       margin-top: 30px;
-   }
+   } */
       .about__button{
          margin-bottom: 60px;
       }
+      /* ubrat` ==========*/
+      .about{
+         background: url('img/market4.jpg') 0 0 / 100% no-repeat;
+         background-position: center;
+         background-size: cover;
+         background-attachment: fixed;
+      }
+      .about__button {
+         margin: 60px 0px 0px 0px;
+         color: #fff;
+         border: 2px solid #fff;
+      }
+      .about__button a{
+         color: #fff;
+
+      }
+      .about__ingormations-mission {
+         color: #fff;
+      }
+      .about__ingormations-text {
+         color: #fff;
+      }
+      
+      .about__ingormations-italian {
+         color: #fff;
+
+      }
+      
+      .about__ingormations-who {
+         color: #fff; 
+      }
+      
+      .about__tittle-tittle {
+         color: #fff;
+      }
+      /* ============ */
 }
 /* ==================================== */
 
