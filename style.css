@@ -35,7 +35,9 @@ input {
 main {
    flex: 1 1 auto;
 }
-
+img {
+   max-width: 100%;
+}
 a {
 	text-decoration: none;
 	display: inline-block;
@@ -413,8 +415,17 @@ li {
 /* =======ABOIUT US================== */
 
 .about {
-   background-color: #fff;
-   margin-top: 100px;
+   /* background-color: #fff; */
+   /* margin-top: 100px; */
+
+/* ubrat` ==========*/
+
+   background: url('img/bg-body.png') 0 0 / 100% no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+/* ============ */
+
 }
 
 .about__body {
@@ -425,6 +436,15 @@ li {
    padding: 100px 0;
 }
 
+/* ubrat` ==========*/
+.about__tittle-tex.dash-grey{
+   color: #fff;
+}
+.about__tittle-tex.dash-grey::before{
+   background-color: #fff;
+}
+
+/* ============ */
 .about__tittle-tex {
    font-weight: 400;
    font-size: 18px;
@@ -438,7 +458,13 @@ li {
    font-size: clamp(1.5rem, 1.071rem + 2.14vw, 3rem);
    line-height: clamp(2.125rem, 1.714rem + 2.05vw, 3.563rem);
    letter-spacing: 0%;
-   color: #177165;
+
+   /* color: #177165; */
+/* ubrat` ==========*/
+color: #fff;
+/* ============ */
+
+
 }
 
 .about__main {
@@ -470,14 +496,20 @@ li {
    font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
    line-height: 35.2px;
    letter-spacing: 0%;
-   color: #177165;
+   /* color: #177165; */
+   /* ubrat` ==========*/
+   color: #fff;
+/* ============ */   
 }
 
 .about__ingormations-text {
    font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
    line-height: 26px;
    letter-spacing: 0%;
-   color: #777;
+   /* color: #777; */
+   /* ubrat` ==========*/
+color: #fff;
+/* ============ */
 }
 
 .about__ingormations-italian {
@@ -485,7 +517,10 @@ li {
    font-weight: 400;
    font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
    line-height: 30px;
-   color: #177165;
+   /* color: #177165; */
+   /* ubrat` ==========*/
+color: #fff;
+/* ============ */
 }
 
 .about__ingormations-mission {
@@ -493,16 +528,30 @@ li {
    font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
    line-height: 35.2px;
    letter-spacing: 0%;
-   color: #177165;
+   /* color: #177165; */
+   /* ubrat` ==========*/
+color: #fff;
+/* ============ */
    margin: 10px 0px 0px 0px;
 }
 
 .about__button {
    margin: 60px 0px 0px 0px;
-   color: #177165;
-   border: 2px solid #177165;
-}
+   /* color: #177165; */
+   /* border: 2px solid #177165; */
+   /* ubrat` ==========*/
+color: #fff;
+border: 2px solid #fff;
 
+/* ============ */
+}
+   /* ubrat` ==========*/
+
+.about__button a{
+color: #fff;
+
+}
+/* ============ */
 @media(max-width: 1110px){
    .about__button {
          margin: 30px 0px 0px 0px;
@@ -700,6 +749,6 @@ li {
    }
 }
 /* ==================================== */
-/* ==============FOOTER====================== */
+/* ==============TEAM====================== */
 
 /* ========================================================= */
